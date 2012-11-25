@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>All funny items!</title>
+	</head>
+	<body>
+		<ol>
+			{% for p in funnyitemposts %}
+			<li><a href='/funnyitempost/{{ p.id }}'>{{ p.itemname }}</a></li>
+			{% endfor %}
+		</ol>
+	</body>
+</html>
